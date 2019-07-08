@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args) {
+		int a1,a2,b1,b2,c1,c2;
+		int[] arrayInt;// tao ra bien, chua cap bo nho 
+		float[] arrayFloat;
+		char[] arrayChar; //String 
+		String string;//"thien"
+		string = "thien"; // intialize 
+		string.length();
+		arrayInt = new int[10]; //  [1,2,3,5,2,3,4,2,3,7] length = 10, index = 0,1,2,3,4,5,6,7,8,9 
+		String[] arrayString; // ["thien","hung" ...] 
+		System.out.println(arrayInt[10]); // 
+		// so phan tu 
+		
+		// KieuDuLieu[] tenMang;
+		// tenMang = new KieuDuLieu[length];
+		Scanner sc = new Scanner(System.in);
+		for (int i = 0; i < arrayInt.length; i++) { // arrayInt.length = 10 
+			arrayInt[i] = sc.nextInt();
+		}
+	}
+}
+
