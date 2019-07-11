@@ -13,6 +13,7 @@ public class Lesson1 {
 //            b2 = sc.nextFloat();
 //            c1 = sc.nextFloat();
 //            c2 = sc.nextFloat();
+		// giai he phuong trinh bang dinh thuc 
 //            float D = (a1 * b2) - (a2 * b1);
 //            float Dx = (c1 * b2) - (c2 * b1);
 //            float Dy = (a1 * c2) - (a2 * c1);
@@ -48,13 +49,17 @@ public class Lesson1 {
 			}
 		}
 		for (int i = 0; i < n; i++) {
-			for (int j = 0; j < n + 1; j++) {
+			for (int j = 0; j < n + 1; j++) { // csam5000 
 				System.out.print("\t ");
 				System.out.print(A[i][j]);
 			}
 			System.out.println();
 		}
-
+		// int char double float 
+		// ConNguoi tuoi int ten string ...
+	// String = "thien" = 5 char [t,h,i,e,n]
+		//BigInteger highValue, lowValue // 8888-9999  
+		// String BigInteger 
 		// Tinh dinh thuc cua ma tran A
 		float D = 0;
 		for (int i = 0; i < n; i++) {
