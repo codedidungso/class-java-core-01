@@ -11,7 +11,7 @@ public class Main {
 		String[] stringArray = new String[n];
 		sc.nextLine();
 		for (int i = 0; i < n; i++) {
-			stringArray[i] = sc.nextLine();
+			stringArray[i] = sc.nextLine().trim();
 		}
 //		for (int i = 0; i < stringArray.length; i++) {
 //			System.out.println(i + ":" + stringArray[i]);
