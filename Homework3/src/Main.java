@@ -7,28 +7,40 @@ public class Main {
 		System.out.print("Nhap vao so luong nguoi: ");
 		int n;
 		Scanner sc = new Scanner(System.in);
-		n = sc.nextInt();
+		n = Integer.valueOf(sc.nextLine()); // parseInt
 		String[] stringArray = new String[n];
-		sc.nextLine();
+//		sc.nextLine();
+
 		for (int i = 0; i < n; i++) {
 			stringArray[i] = sc.nextLine().trim();
 		}
-//		for (int i = 0; i < stringArray.length; i++) {
-//			System.out.println(i + ":" + stringArray[i]);
-//		}
+		// 3\n
+		// THIEN\n
+		// DUY\n
+
+		for (int i = 0; i < stringArray.length; i++) {
+			System.out.println(i + ":" + stringArray[i]);
+		}
 		System.out.println("Nhap vao ten nguoi can tim kiem: ");
 		String key = sc.nextLine();
 		for (int i = 0; i < stringArray.length; i++) {
-			if (stringArray[i].toLowerCase().contains(key.toLowerCase())) {
-				System.out.println("Tim thay: " + stringArray[i]);
+			String current = stringArray[i];
+			current = current.toLowerCase(); // THIEnn.toLowerCase()
+			key = key.toLowerCase();
+			if (current.contains(key)) {
+				System.out.println(stringArray[i]);
 			}
+//			if (stringArray[i].toLowerCase().contains(key.toLowerCase())) {
+//				System.out.println("Tim thay: " + stringArray[i]);
+//			}
 		}
 
 		int count = 0;
+
 		for (int i = 0; i < stringArray.length; i++) {
-			stringArray[i] = stringArray[i].trim();
+			stringArray[i] = stringArray[i];
 			for (int j = 0; j < stringArray[i].length(); j++) {
-				if (stringArray[i].charAt(j) == 'a') {
+				if (stringArray[i].charAt(j) == 'a') {//
 					count++;
 				}
 			}
@@ -58,8 +70,18 @@ public class Main {
 
 		System.out.println("===Bai 3===");
 		for (int j = 0; j < stringArray.length; j++) {
+			// Nguyen Duc Thien;
+			// Nguyen Van Thien
+			// Nguyen;
+			// Nguyen Thien;
+			// ten - ho - ten dem
+			// ThienNguyenDuc
+			// ThienNguyenVan
+			// Nguyen
+			// ThienNguyen
 			String ten, tendem, ho;
 			stringArray[j] = stringArray[j].trim();
+			
 			if (stringArray[j].indexOf(' ') >= 0) {
 				ten = stringArray[j].substring(stringArray[j].lastIndexOf(' ') + 1);
 				ho = stringArray[j].substring(0, stringArray[j].indexOf(' '));
@@ -73,7 +95,7 @@ public class Main {
 				tendem = "";
 			}
 
-//			System.out.println(ho + ":" + tendem + ":" + ten);
+			System.out.println(ho + ":" + tendem + ":" + ten);
 			stringArray[j] = ten + " " + tendem + " " + ho;
 		}
 		for (int j = 0; j < stringArray.length - 1; j++) {
@@ -143,9 +165,12 @@ public class Main {
 		if (carry > 0)
 			str += (char) (carry + '0');
 
-		str = new StringBuilder(str).reverse().toString();
+		//str = new StringBuilder(str).reverse().toString();
 		System.out.println(str);
-
+		
 	}
+	
+	
 
 }
+
