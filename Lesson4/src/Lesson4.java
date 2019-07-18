@@ -5,7 +5,7 @@ import java.util.Arrays;
 // trong ham main, truoc dau ; la dau ) 
 // 3. Merge Sort / Quick Sort
 // 4. In ra tat ca cac so nguyen to dau tien < 100000.
-public class Main {
+public class Lesson4 {
 	static int k = 9;
 
 	public static void main(String[] args) {

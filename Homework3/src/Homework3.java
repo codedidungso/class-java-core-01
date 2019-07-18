@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Main {
+public class Homework3 {
 
 	public static void main(String[] args) {
 		System.out.println("===BAI 1===");

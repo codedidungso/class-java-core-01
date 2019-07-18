@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Main {
+public class Homework2 {
 	public static void main(String[] args) {
 		// Easy session
 		System.out.println("===Bai 1, 2===");
