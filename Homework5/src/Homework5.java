@@ -1,4 +1,5 @@
 import java.util.Calendar;
+import java.util.Date;
 import java.util.Scanner;
 
 public class Homework5 {
@@ -30,12 +31,13 @@ public class Homework5 {
 		Calendar cal1 = Calendar.getInstance();
 		Calendar cal2 = Calendar.getInstance();
 		cal1.set(Integer.parseInt(day1.substring(0, day1.indexOf('-'))),
-				Integer.parseInt(day1.substring(day1.indexOf('-') + 1, day1.lastIndexOf('-'))),
-				Integer.parseInt(day1.substring(day1.lastIndexOf('-') + 1)));
+				Integer.parseInt(day1.substring(day1.indexOf('-') + 1, day1.lastIndexOf('-'))) - 1,
+				Integer.parseInt(day1.substring(day1.lastIndexOf('-') + 1)) - 1);
 		cal2.set(Integer.parseInt(day2.substring(0, day1.indexOf('-'))),
-				Integer.parseInt(day2.substring(day1.indexOf('-') + 1, day1.lastIndexOf('-'))),
-				Integer.parseInt(day2.substring(day1.lastIndexOf('-') + 1)));
-
+				Integer.parseInt(day2.substring(day1.indexOf('-') + 1, day1.lastIndexOf('-'))) - 1,
+				Integer.parseInt(day2.substring(day1.lastIndexOf('-') + 1)) - 1);
+		Date d = new Date(32,32,32);
+		System.out.println(d.toString());
 		return (int) (cal1.getTimeInMillis() - cal2.getTimeInMillis()) / 86400000;
 
 	}
@@ -52,7 +54,7 @@ public class Homework5 {
 		}
 		if (month == 1 || month == 3 || month == 5 || month == 7 || month == 8 || month == 10 || month == 12) {
 			if (day < 1 || day > 31)
-				return false;
+				return false;v
 		}
 		if (month == 4 || month == 6 || month == 9 || month == 11) {
 			if (day < 1 || day > 30)
